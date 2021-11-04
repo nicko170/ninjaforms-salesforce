@@ -5,7 +5,7 @@ namespace NinjaformsSalesforce;
 class NinjaformsSalesforce {
         public static array $options = [
             'nfsalesforce_domain', 'nfsalesforce_username', 'nfsalesforce_password', 'nfsalesforce_client_id',
-            'nfsalesforce_client_secret', 'nfsalesforce_security_token', 'nfsalesforce_email_list',
+            'nfsalesforce_client_secret', 'nfsalesforce_security_token'
         ];
 
         private static NinjaformsSalesforce $instance;
@@ -27,7 +27,7 @@ class NinjaformsSalesforce {
             }
 
             // used in ninjaforms custom action, and posts name / email to salesforce newsletter
-            add_action( 'ninja_forms_pardot_action', [$this, 'process_ninja_forms_salesforce_entry'] );
+            add_action( 'ninja_forms_salesforce_action', [$this, 'process_ninja_forms_salesforce_entry'] );
 
             // Builds admin settings pages
             add_action('admin_init', [$this, 'admin_settings_post']);

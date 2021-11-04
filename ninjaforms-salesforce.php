@@ -2,7 +2,7 @@
 /**
 Plugin Name: Ninja Forms - Salesforce
 Plugin URI: https://github.com/nicko170/ninjaforms-salesforce
-Description: Adds a custom action to Ninja Forms which adds each contact to a company in Salesforce.
+Description: This is a really dodgy integration between Ninja Forms and Salesforce. I might get to documentation at some stage, basically, create a new form with fields that have labels of First Name, Last Name and Email, then set a custom hook action of "ninja_forms_salesforce_action"
 Version: 0.0.1
 Author: Nick Pratley
 Author URI: https://github.com/nicko170
