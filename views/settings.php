@@ -1,8 +1,8 @@
 <?php
 
 // If this file is called directly, abort.
-if ( ! defined('WPINC')) {
-    die;
+if (!defined('WPINC')) {
+    exit;
 }
 
 ?><div class="wrap">
@@ -19,7 +19,7 @@ if ( ! defined('WPINC')) {
                         <label>Salesforce Domain</label>
                     </th>
                     <td>
-                        <input class="regular-text" type="text" placeholder="https://internet.my.salesforce.com/" name="nfsalesforce[nfsalesforce_domain]" value="<?=$data['nfsalesforce_domain'];?>">
+                        <input class="regular-text" type="text" placeholder="https://internet.my.salesforce.com/" name="nfsalesforce[nfsalesforce_domain]" value="<?=$data['nfsalesforce_domain']; ?>">
                         <p class="description">Enter your Salesforce Lightning Domain</p>
                     </td>
                 </tr>
@@ -29,7 +29,7 @@ if ( ! defined('WPINC')) {
                         <label>Salesforce Username</label>
                     </th>
                     <td>
-                        <input class="regular-text" type="text" placeholder="admin@website.com.au" name="nfsalesforce[nfsalesforce_username]" value="<?=$data['nfsalesforce_username'];?>">
+                        <input class="regular-text" type="text" placeholder="admin@website.com.au" name="nfsalesforce[nfsalesforce_username]" value="<?=$data['nfsalesforce_username']; ?>">
                         <p class="description">Enter your Salesforce Username</p>
                     </td>
                 </tr>
@@ -39,7 +39,7 @@ if ( ! defined('WPINC')) {
                         <label>Salesforce Password</label>
                     </th>
                     <td>
-                        <input class="regular-text" placeholder="hunter2" type="password" name="nfsalesforce[nfsalesforce_password]" value="<?=$data['nfsalesforce_password'];?>">
+                        <input class="regular-text" placeholder="hunter2" type="password" name="nfsalesforce[nfsalesforce_password]" value="<?=$data['nfsalesforce_password']; ?>">
                         <p class="description">Enter your Salesforce Password</p>
                     </td>
                 </tr>
@@ -49,7 +49,7 @@ if ( ! defined('WPINC')) {
                         <label>Salesforce Security Token</label>
                     </th>
                     <td>
-                        <input class="regular-text" type="password" name="nfsalesforce[nfsalesforce_security_token]" value="<?=$data['nfsalesforce_security_token'];?>">
+                        <input class="regular-text" type="password" name="nfsalesforce[nfsalesforce_security_token]" value="<?=$data['nfsalesforce_security_token']; ?>">
                         <p class="description">If you dont know it, you can reset it <a href="https://help.salesforce.com/s/articleView?id=sf.user_security_token.htm&type=5" target="_blank">here</a> </p>
                     </td>
                 </tr>
@@ -59,7 +59,7 @@ if ( ! defined('WPINC')) {
                         <label>Salesforce Client ID</label>
                     </th>
                     <td>
-                        <input class="regular-text" type="text" placeholder="website" name="nfsalesforce[nfsalesforce_client_id]" value="<?=$data['nfsalesforce_client_id'];?>">
+                        <input class="regular-text" type="text" placeholder="website" name="nfsalesforce[nfsalesforce_client_id]" value="<?=$data['nfsalesforce_client_id']; ?>">
                         <p class="description">Create a new <a href="https://help.salesforce.com/s/articleView?id=sf.connected_app_create.htm&language=en_US&r=https%3A%2F%2Fwww.google.com%2F&type=5" target="_blank">Connected App</a>, and insert the Client ID here: </p>
                     </td>
                 </tr>
@@ -70,7 +70,7 @@ if ( ! defined('WPINC')) {
                         <label>Salesforce Client Secret</label>
                     </th>
                     <td>
-                        <input class="regular-text" type="password" placeholder="website" name="nfsalesforce[nfsalesforce_client_secret]" value="<?=$data['nfsalesforce_client_secret'];?>">
+                        <input class="regular-text" type="password" placeholder="website" name="nfsalesforce[nfsalesforce_client_secret]" value="<?=$data['nfsalesforce_client_secret']; ?>">
                         <p class="description">Create a new <a href="https://help.salesforce.com/s/articleView?id=sf.connected_app_create.htm&language=en_US&r=https%3A%2F%2Fwww.google.com%2F&type=5" target="_blank">Connected App</a>, and insert the Client Secret here</p>
                     </td>
                 </tr>
@@ -80,7 +80,7 @@ if ( ! defined('WPINC')) {
                         <label>Salesforce Company Name</label>
                     </th>
                     <td>
-                        <input class="regular-text" type="password" placeholder="website" name="nfsalesforce[nfsalesforce_company_name]" value="<?=$data['nfsalesforce_company_name'];?>">
+                        <input class="regular-text" type="password" placeholder="website" name="nfsalesforce[nfsalesforce_company_name]" value="<?=$data['nfsalesforce_company_name']; ?>">
                         <p class="description">Will upsert a company with this name, and link *all* users that subscribe to the newsletter to this company.</p>
                     </td>
                 </tr>
