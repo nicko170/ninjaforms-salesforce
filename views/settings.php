@@ -1,8 +1,8 @@
 <?php
 
 // If this file is called directly, abort.
-if ( ! defined('WPINC')) {
-    die;
+if (!defined('WPINC')) {
+    exit;
 }
 
 ?><div class="wrap">
@@ -19,7 +19,7 @@ if ( ! defined('WPINC')) {
                         <label>Salesforce Domain</label>
                     </th>
                     <td>
-                        <input class="regular-text" type="text" placeholder="https://internet.my.salesforce.com/" name="nfsalesforce[nfsalesforce_domain]" value="<?=$data['nfsalesforce_domain'];?>">
+                        <input class="regular-text" type="text" placeholder="https://internet.my.salesforce.com/" name="nfsalesforce[nfsalesforce_domain]" value="<?=$data['nfsalesforce_domain']; ?>">
                         <p class="description"></p>
                     </td>
                 </tr>
@@ -29,7 +29,7 @@ if ( ! defined('WPINC')) {
                         <label>Salesforce Username</label>
                     </th>
                     <td>
-                        <input class="regular-text" type="text" placeholder="admin@website.com.au" name="nfsalesforce[nfsalesforce_username]" value="<?=$data['nfsalesforce_username'];?>">
+                        <input class="regular-text" type="text" placeholder="admin@website.com.au" name="nfsalesforce[nfsalesforce_username]" value="<?=$data['nfsalesforce_username']; ?>">
                         <p class="description"></p>
                     </td>
                 </tr>
@@ -39,7 +39,7 @@ if ( ! defined('WPINC')) {
                         <label>Salesforce Password</label>
                     </th>
                     <td>
-                        <input class="regular-text" placeholder="hunter2" type="password" name="nfsalesforce[nfsalesforce_password]" value="<?=$data['nfsalesforce_password'];?>">
+                        <input class="regular-text" placeholder="hunter2" type="password" name="nfsalesforce[nfsalesforce_password]" value="<?=$data['nfsalesforce_password']; ?>">
                         <p class="description"></p>
                     </td>
                 </tr>
@@ -49,7 +49,7 @@ if ( ! defined('WPINC')) {
                         <label>Salesforce Security Token</label>
                     </th>
                     <td>
-                        <input class="regular-text" type="password" name="nfsalesforce[nfsalesforce_security_token]" value="<?=$data['nfsalesforce_security_token'];?>">
+                        <input class="regular-text" type="password" name="nfsalesforce[nfsalesforce_security_token]" value="<?=$data['nfsalesforce_security_token']; ?>">
                         <p class="description"></p>
                     </td>
                 </tr>
@@ -59,7 +59,7 @@ if ( ! defined('WPINC')) {
                         <label>Salesforce Client ID</label>
                     </th>
                     <td>
-                        <input class="regular-text" type="text" placeholder="website" name="nfsalesforce[nfsalesforce_client_id]" value="<?=$data['nfsalesforce_client_id'];?>">
+                        <input class="regular-text" type="text" placeholder="website" name="nfsalesforce[nfsalesforce_client_id]" value="<?=$data['nfsalesforce_client_id']; ?>">
                         <p class="description"></p>
                     </td>
                 </tr>
@@ -70,7 +70,7 @@ if ( ! defined('WPINC')) {
                         <label>Salesforce Client Secret</label>
                     </th>
                     <td>
-                        <input class="regular-text" type="password" placeholder="website" name="nfsalesforce[nfsalesforce_client_secret]" value="<?=$data['nfsalesforce_client_secret'];?>">
+                        <input class="regular-text" type="password" placeholder="website" name="nfsalesforce[nfsalesforce_client_secret]" value="<?=$data['nfsalesforce_client_secret']; ?>">
                         <p class="description"></p>
                     </td>
                 </tr>
