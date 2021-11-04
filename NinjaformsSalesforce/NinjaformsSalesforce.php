@@ -5,7 +5,7 @@ namespace NinjaformsSalesforce;
 class NinjaformsSalesforce {
         public static array $options = [
             'nfsalesforce_domain', 'nfsalesforce_username', 'nfsalesforce_password', 'nfsalesforce_client_id',
-            'nfsalesforce_client_secret', 'nfsalesforce_security_token'
+            'nfsalesforce_client_secret', 'nfsalesforce_security_token', 'nfsalesforce_company_name'
         ];
 
         private static NinjaformsSalesforce $instance;
@@ -52,7 +52,7 @@ class NinjaformsSalesforce {
 
         public function register_admin_menu()
         {
-            add_submenu_page('ninja-forms', 'Pardot Integration', 'Pardot Integration', apply_filters( 'ninja_forms_admin_menu_capabilities', 'manage_options' ), 'ninja-forms-pardot-settings', [$this, 'settings_view']);
+            add_submenu_page('ninja-forms', 'Salesforce Config', 'Salesforce Config', apply_filters( 'ninja_forms_salesforce_config', 'manage_options' ), 'ninja-forms-pardot-settings', [$this, 'settings_view']);
         }
 
         public function settings_view()
@@ -111,7 +111,7 @@ class NinjaformsSalesforce {
                               'method' => 'PATCH',
                               'url' => '/services/data/v53.0/sobjects/Account/Portal_id__c/ID999999999',
                               'referenceId' => 'NewAccount',
-                              'body' => ['name' => 'Website Newsletter Subscribers']
+                              'body' => ['name' => get_option('nfsalesforce_company_name')]
                           ],
                           [
                               'method' => 'POST',
